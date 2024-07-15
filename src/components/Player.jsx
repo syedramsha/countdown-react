@@ -5,6 +5,7 @@ export default function Player() {
     const [enteredPlayerName,setEnteredPlayerName] = useState(null);
     const handleChange = () => {
         setEnteredPlayerName(playerName.current.value);
+        playerName.current.value = ''
     }
     return (
     <section id="player">
